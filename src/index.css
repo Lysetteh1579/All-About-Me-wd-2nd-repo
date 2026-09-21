@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer base {
+  *, *::before, *::after {
+    font-family: 'Dancing Script', 'Caveat', cursive, 'Brush Script MT', sans-serif !important;
+  }
+
+  html, body {
+    font-family: 'Dancing Script', 'Caveat', cursive, 'Brush Script MT', sans-serif !important;
+    font-size: 18px;
+    letter-spacing: 0.015em;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Dancing Script', 'Caveat', cursive, 'Brush Script MT', sans-serif !important;
+  }
+
+  button, input, select, textarea {
+    font-family: 'Dancing Script', 'Caveat', cursive, 'Brush Script MT', sans-serif !important;
+  }
+}
+
+.font-cursive {
+  font-family: 'Dancing Script', 'Caveat', cursive, 'Brush Script MT', sans-serif !important;
+}

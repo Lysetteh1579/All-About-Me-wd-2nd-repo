@@ -1,0 +1,6 @@
+{
+  "name": "All About Me",
+  "description": "An interactive 'All About Me' personal portfolio and web development showcase for Lysette Hernandez.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
