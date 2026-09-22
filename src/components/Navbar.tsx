@@ -12,11 +12,10 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
 
   const navItems = [
     { id: 'about', label: 'About' },
-    { id: 'skills', label: 'Skills' },
+    { id: 'goals', label: 'Goals' },
     { id: 'favorites', label: 'Passions' },
-    { id: 'quiz', label: 'Trivia' },
-    { id: 'goals', label: 'Journey' },
-    { id: 'guestbook', label: 'Guestbook' },
+    { id: 'photos', label: 'Photos' },
+    { id: 'media', label: 'Media' },
   ];
 
   const handleLinkClick = (id: string) => {

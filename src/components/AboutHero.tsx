@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, MapPin, Heart, ArrowRight, Quote, Code } from 'lucide-react';
+import { Sparkles, MapPin, Heart, ArrowRight, Quote, Code, Cake } from 'lucide-react';
 import { PROFILE_INFO } from '../data/profileData';
 import { PhotoUploader } from './PhotoUploader';
 
@@ -111,7 +111,14 @@ export const AboutHero: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-cursive font-bold text-red-600 text-2xl tracking-wide">Lysette Hernandez</h3>
-                  <p className="text-xs text-stone-500">@{PROFILE_INFO.githubUsername}</p>
+                  <div className="flex items-center gap-1.5 text-xs text-stone-500">
+                    <span>@{PROFILE_INFO.githubUsername}</span>
+                    <span>&bull;</span>
+                    <span className="inline-flex items-center gap-1 text-red-600 font-semibold">
+                      <Cake className="w-3 h-3" />
+                      11-17-11
+                    </span>
+                  </div>
                   <div className="flex items-center gap-1 mt-1 text-xs text-emerald-600 font-semibold">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                     <span>Active in Web Dev</span>

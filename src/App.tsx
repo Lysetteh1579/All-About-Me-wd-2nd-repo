@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { AboutHero } from './components/AboutHero';
-import { SkillsSection } from './components/SkillsSection';
-import { FavoritesSection } from './components/FavoritesSection';
-import { QuizGame } from './components/QuizGame';
 import { GoalsSection } from './components/GoalsSection';
-import { Guestbook } from './components/Guestbook';
+import { FavoritesSection } from './components/FavoritesSection';
+import { PhotosSection } from './components/PhotosSection';
+import { MediaSection } from './components/MediaSection';
 import { Footer } from './components/Footer';
 
 export const App: React.FC = () => {
@@ -13,7 +12,7 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'skills', 'favorites', 'quiz', 'goals', 'guestbook'];
+      const sections = ['about', 'goals', 'favorites', 'photos', 'media'];
       const scrollPosition = window.scrollY + 120;
 
       for (const sectionId of sections) {
@@ -47,11 +46,10 @@ export const App: React.FC = () => {
       
       <main className="flex-1">
         <AboutHero />
-        <SkillsSection />
-        <FavoritesSection />
-        <QuizGame />
         <GoalsSection />
-        <Guestbook />
+        <FavoritesSection />
+        <PhotosSection />
+        <MediaSection />
       </main>
 
       <Footer />
