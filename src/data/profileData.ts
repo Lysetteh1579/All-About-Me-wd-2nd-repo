@@ -1,8 +1,18 @@
 import { SkillItem, FavoriteItem, TriviaQuestion, GoalItem, PhotoItem, MediaItem } from '../types';
+import trapsoulCover from '../assets/images/trapsoul_album_cover_1790185130216.jpg';
+import drakeCover from '../assets/images/drake_album_cover_1790185534171.jpg';
+import jeremihCover from '../assets/images/jeremih_album_cover_1790185546122.jpg';
+import pndCover from '../assets/images/partynextdoor_cover_1790185900156.jpg';
+
+export const BRYSON_TILLER_ALBUM_COVER = trapsoulCover;
+export const DRAKE_ALBUM_COVER = drakeCover;
+export const JEREMIH_ALBUM_COVER = jeremihCover;
+export const PND_ALBUM_COVER = pndCover;
 
 export const PROFILE_INFO = {
   name: 'Lysette Hernandez',
   githubUsername: 'Lysetteh1579',
+  instagram: 'lysette.hernandez',
   email: 'hernandezlysette2@gmail.com',
   tagline: 'Web Development Student, Creative Creator & Digital Explorer',
   bio: "Welcome to my digital corner! I'm Lysette, a curious web development enthusiast passionate about clean design, intuitive user experiences, and bringing imaginative ideas to life through code. When I'm not learning modern frontend tech or debugging CSS layouts, you'll find me curated playlists, reading, exploring photography, or brewing iced lattes.",
@@ -70,6 +80,22 @@ export const SKILLS_DATA: SkillItem[] = [
 
 export const FAVORITES_DATA: FavoriteItem[] = [
   {
+    id: 'fav-shopping',
+    category: 'hobbies',
+    title: 'Going Shopping',
+    subtitle: 'Boutiques, beauty hauls & finding new styles',
+    description: 'Browsing cute local boutiques and malls, checking out the latest fashion trends, stocking up on beauty and skincare essentials, and enjoying retail therapy.',
+    tag: 'Lifestyle'
+  },
+  {
+    id: 'fav-fugglers',
+    category: 'hobbies',
+    title: 'Collecting Fugglers',
+    subtitle: 'Quirky, mischievous & funny plush monsters',
+    description: 'Hunting down rare Fugglers (Funny Ugly Monsters) with their signature realistic teeth, goofy mismatched expressions, and chaotic plush charm.',
+    tag: 'Collection'
+  },
+  {
     id: 'fav-friends',
     category: 'hobbies',
     title: 'Talking to Friends',
@@ -84,38 +110,6 @@ export const FAVORITES_DATA: FavoriteItem[] = [
     subtitle: 'Ocean waves, coastal sunsets & salty air',
     description: 'Relaxing by the water, listening to the crashing waves, walking along the shoreline at golden hour, and soaking up sunny California beach days.',
     tag: 'Coastal'
-  },
-  {
-    id: 'fav-1',
-    category: 'hobbies',
-    title: 'Digital Photography',
-    subtitle: 'Golden hour & street candid shots',
-    description: 'Capturing everyday fleeting moments, warm light, and architectural geometry through visual storytelling.',
-    tag: 'Creative'
-  },
-  {
-    id: 'fav-2',
-    category: 'music',
-    title: 'Indie & Chill Lo-Fi Beats',
-    subtitle: 'The essential coding companions',
-    description: 'Smooth rhythms, ambient acoustics, and upbeat melodies that keep focus sharp and creativity flowing.',
-    tag: 'Soundtrack'
-  },
-  {
-    id: 'fav-3',
-    category: 'books',
-    title: 'Design Systems & Sci-Fi Novels',
-    subtitle: 'From typography principles to world-building',
-    description: 'Exploring how technology, storytelling, and thoughtful craft influence how humans interact with the world.',
-    tag: 'Reading'
-  },
-  {
-    id: 'fav-4',
-    category: 'places',
-    title: 'Sunlit Coffee Shops & Coastal Trails',
-    subtitle: 'Where inspiration strikes best',
-    description: 'Cozy spots with natural light, good espresso, notebook sketches, and ocean breeze.',
-    tag: 'Exploration'
   }
 ];
 
@@ -196,24 +190,6 @@ export const DEFAULT_PHOTOS: PhotoItem[] = [
     date: 'August 2026',
     location: 'Campus Commons',
     likes: 21
-  },
-  {
-    id: 'photo-5',
-    url: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Wireframing UI components, color palettes, and typography',
-    category: 'creative',
-    date: 'November 2026',
-    location: 'Design Studio',
-    likes: 19
-  },
-  {
-    id: 'photo-6',
-    url: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Iced latte break between code commits and debugging',
-    category: 'moments',
-    date: 'September 2026',
-    location: 'Favorite Cafe',
-    likes: 27
   }
 ];
 
@@ -318,100 +294,52 @@ export const GOALS_DATA: GoalItem[] = [
 
 export const DEFAULT_MEDIA: MediaItem[] = [
   {
-    id: 'media-1',
-    title: 'Sunset Lo-Fi Study Beats',
-    creator: 'Lofi Records & ChillHop',
+    id: 'media-bt-exchange',
+    title: 'Exchange',
+    creator: 'Bryson Tiller',
     type: 'music',
-    coverUrl: 'https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=800&q=80',
+    coverUrl: trapsoulCover,
     mediaUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
-    description: 'Mellow Rhodes piano, vinyl dust cracks, and steady gentle kick drums for uninterrupted focus.',
-    duration: '3:45',
-    tag: 'Focus Playlist',
-    likes: 38
+    description: 'Iconic Trapsoul anthem featuring smooth moody production, heartfelt vocals, and late-night nostalgic R&B flow.',
+    duration: '3:14',
+    tag: 'T R A P S O U L',
+    likes: 78
   },
   {
-    id: 'media-2',
-    title: 'Midnight Coding Flow & Ambient Synth',
-    creator: 'RetroWave Dreams',
+    id: 'media-drake-own-it',
+    title: 'Own It',
+    creator: 'Drake',
     type: 'music',
-    coverUrl: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80',
+    coverUrl: drakeCover,
     mediaUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
-    description: 'Dreamy analog arpeggios and deep atmospheric basslines for late night CSS & JS breakthroughs.',
-    duration: '4:12',
-    tag: 'Coding Soundtrack',
-    likes: 42
+    description: 'Introspective, nocturnal slow jam with moody synths, honest cadence, and late-night nostalgia.',
+    duration: '4:11',
+    tag: 'Nothing Was the Same / R&B',
+    likes: 95
   },
   {
-    id: 'media-3',
-    title: 'Golden Hour Acoustic Guitar',
-    creator: 'Indie Folk Collective',
+    id: 'media-jeremih-planez',
+    title: 'Planez',
+    creator: 'Jeremih',
     type: 'music',
-    coverUrl: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=800&q=80',
+    coverUrl: jeremihCover,
     mediaUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3',
-    description: 'Warm fingerpicked acoustics and gentle harmonies reminiscent of California coastal sunsets.',
-    duration: '3:18',
-    tag: 'Unwind',
-    likes: 29
+    description: 'Smooth, seductive R&B anthem featuring hypnotic atmospheric production, infectious melody, and sleek flow.',
+    duration: '4:00',
+    tag: 'Late Nights / R&B',
+    likes: 88
   },
   {
-    id: 'media-4',
-    title: 'The Art of Frontend Micro-Interactions',
-    creator: 'Frontend Masters & Creative Dev',
-    type: 'video',
-    coverUrl: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80',
-    mediaUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    description: 'Exploring spring animations, tactile hover responses, and visual polish that make websites feel alive.',
-    duration: '18 min',
-    tag: 'UI/UX Masterclass',
-    likes: 34
-  },
-  {
-    id: 'media-5',
-    title: 'Syntax: Tasty Web Development Talks',
-    creator: 'Wes Bos & Scott Tolinski',
-    type: 'podcast',
-    coverUrl: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80',
-    mediaUrl: 'https://syntax.fm',
-    description: 'Deep dives into modern CSS layouts, JavaScript frameworks, developer tooling, and workflow hacks.',
-    duration: '45 min',
-    tag: 'Tech Podcast',
-    likes: 27
-  },
-  {
-    id: 'media-6',
-    title: 'Designing with Intentional Whitespace & Type',
-    creator: 'Smashing Magazine & A List Apart',
-    type: 'article',
-    coverUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80',
-    mediaUrl: 'https://www.smashingmagazine.com',
-    description: 'An inspiring breakdown on optical sizing, proportional scales, and designing without clutter.',
-    duration: '7 min read',
-    tag: 'Design Philosophy',
-    likes: 31
-  },
-  {
-    id: 'media-7',
-    title: 'Street Photography: Framing Real Moments',
-    creator: 'Candid Visions Gallery',
-    type: 'video',
-    coverUrl: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80',
-    mediaUrl: 'https://www.youtube.com',
-    description: 'A visual journey exploring geometric shadows, street reflections, and golden hour portrait techniques.',
-    duration: '12 min',
-    tag: 'Visual Arts',
-    likes: 25
-  },
-  {
-    id: 'media-8',
-    title: 'Design Matters with Debbie Millman',
-    creator: 'Debbie Millman',
-    type: 'podcast',
-    coverUrl: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80',
-    mediaUrl: 'https://www.designmattersmedia.com',
-    description: 'In-depth conversations with designers, typographers, writers, and cultural thinkers on creative craft.',
-    duration: '52 min',
-    tag: 'Creative Conversations',
-    likes: 22
+    id: 'media-pnd-break-from-toronto',
+    title: 'Break from Toronto',
+    creator: 'PARTYNEXTDOOR',
+    type: 'music',
+    coverUrl: pndCover,
+    mediaUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+    description: 'Timeless OVO Sound anthem built around a dreamy acoustic vocal sample, hypnotic 808 bounce, and raw late-night R&B nostalgia.',
+    duration: '1:39',
+    tag: 'PARTYNEXTDOOR / OVO Sound',
+    likes: 96
   }
 ];
 

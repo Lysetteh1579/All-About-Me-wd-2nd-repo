@@ -18,8 +18,8 @@ import {
   Layers
 } from 'lucide-react';
 
-const STORAGE_PHOTOS_KEY = 'lysette_portfolio_photos_v1';
-const STORAGE_LIKES_KEY = 'lysette_portfolio_photo_likes_v1';
+const STORAGE_PHOTOS_KEY = 'lysette_portfolio_photos_v2';
+const STORAGE_LIKES_KEY = 'lysette_portfolio_photo_likes_v2';
 
 export const PhotosSection: React.FC = () => {
   const [photos, setPhotos] = useState<PhotoItem[]>(() => {
@@ -95,12 +95,10 @@ export const PhotosSection: React.FC = () => {
 
   const handleDeletePhoto = (e: React.MouseEvent, photoId: string) => {
     e.stopPropagation();
-    if (window.confirm('Delete this photo from your gallery?')) {
-      const updated = photos.filter(p => p.id !== photoId);
-      savePhotos(updated);
-      if (activeLightboxIdx !== null) {
-        setActiveLightboxIdx(null);
-      }
+    const updated = photos.filter(p => p.id !== photoId);
+    savePhotos(updated);
+    if (activeLightboxIdx !== null) {
+      setActiveLightboxIdx(null);
     }
   };
 

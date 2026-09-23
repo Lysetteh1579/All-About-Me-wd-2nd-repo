@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FAVORITES_DATA } from '../data/profileData';
-import { Sparkles, Music, BookOpen, Camera, Compass, Users, Waves } from 'lucide-react';
+import { Users, Waves, Smile, ShoppingBag } from 'lucide-react';
 
 export const FavoritesSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('all');
@@ -8,8 +8,6 @@ export const FavoritesSection: React.FC = () => {
   const categories = [
     { id: 'all', label: 'All Passions' },
     { id: 'hobbies', label: 'Hobbies' },
-    { id: 'music', label: 'Music & Audio' },
-    { id: 'books', label: 'Reading' },
     { id: 'places', label: 'Places' }
   ];
 
@@ -63,12 +61,10 @@ export const FavoritesSection: React.FC = () => {
                   <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-amber-50 text-amber-800 border border-amber-100">
                     {item.tag}
                   </span>
+                  {item.id === 'fav-shopping' && <ShoppingBag className="w-4 h-4 text-amber-700" />}
+                  {item.id === 'fav-fugglers' && <Smile className="w-4 h-4 text-amber-700" />}
                   {item.id === 'fav-friends' && <Users className="w-4 h-4 text-amber-700" />}
                   {item.id === 'fav-beach' && <Waves className="w-4 h-4 text-amber-700" />}
-                  {item.category === 'music' && <Music className="w-4 h-4 text-amber-700" />}
-                  {item.category === 'books' && <BookOpen className="w-4 h-4 text-amber-700" />}
-                  {item.category === 'hobbies' && item.id !== 'fav-friends' && <Camera className="w-4 h-4 text-amber-700" />}
-                  {item.category === 'places' && item.id !== 'fav-beach' && <Compass className="w-4 h-4 text-amber-700" />}
                 </div>
 
                 <h3 className="font-bold text-stone-900 text-lg sm:text-xl">{item.title}</h3>
