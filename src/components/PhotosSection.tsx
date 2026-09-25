@@ -18,8 +18,8 @@ import {
   Layers
 } from 'lucide-react';
 
-const STORAGE_PHOTOS_KEY = 'lysette_portfolio_photos_v2';
-const STORAGE_LIKES_KEY = 'lysette_portfolio_photo_likes_v2';
+const STORAGE_PHOTOS_KEY = 'lysette_portfolio_photos_v4';
+const STORAGE_LIKES_KEY = 'lysette_portfolio_photo_likes_v4';
 
 export const PhotosSection: React.FC = () => {
   const [photos, setPhotos] = useState<PhotoItem[]>(() => {
@@ -314,6 +314,7 @@ export const PhotosSection: React.FC = () => {
                       src={photo.url}
                       alt={photo.caption}
                       loading="lazy"
+                      referrerPolicy="no-referrer"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
 
@@ -442,6 +443,7 @@ export const PhotosSection: React.FC = () => {
               <img
                 src={activePhoto.url}
                 alt={activePhoto.caption}
+                referrerPolicy="no-referrer"
                 className="max-w-full max-h-[68vh] object-contain"
               />
             </div>

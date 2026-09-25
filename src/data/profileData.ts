@@ -3,6 +3,10 @@ import trapsoulCover from '../assets/images/trapsoul_album_cover_1790185130216.j
 import drakeCover from '../assets/images/drake_album_cover_1790185534171.jpg';
 import jeremihCover from '../assets/images/jeremih_album_cover_1790185546122.jpg';
 import pndCover from '../assets/images/partynextdoor_cover_1790185900156.jpg';
+import concertPhoto from '../assets/images/concert_real_photo_1790361433684.jpg';
+import beachSunsetPhoto from '../assets/images/sunset_beach_ocean_1790361200449.jpg';
+import shoppingBagPhoto from '../assets/images/tory_burch_shopping_1790361210323.jpg';
+import costumeStoreSelfie from '../assets/images/halloween_mirror_selfie_1790361221292.jpg';
 
 export const BRYSON_TILLER_ALBUM_COVER = trapsoulCover;
 export const DRAKE_ALBUM_COVER = drakeCover;
@@ -88,12 +92,12 @@ export const FAVORITES_DATA: FavoriteItem[] = [
     tag: 'Lifestyle'
   },
   {
-    id: 'fav-fugglers',
-    category: 'hobbies',
-    title: 'Collecting Fugglers',
-    subtitle: 'Quirky, mischievous & funny plush monsters',
-    description: 'Hunting down rare Fugglers (Funny Ugly Monsters) with their signature realistic teeth, goofy mismatched expressions, and chaotic plush charm.',
-    tag: 'Collection'
+    id: 'fav-going-out',
+    category: 'places',
+    title: 'Going Out to Places',
+    subtitle: 'Exploring new spots, cafe hopping & city adventures',
+    description: 'Heading out to discover aesthetic cafes, trying new food spots, exploring vibrant neighborhoods, and enjoying fun outings and city adventures with friends.',
+    tag: 'Adventures'
   },
   {
     id: 'fav-friends',
@@ -156,6 +160,42 @@ export const TRIVIA_QUESTIONS: TriviaQuestion[] = [
 
 export const DEFAULT_PHOTOS: PhotoItem[] = [
   {
+    id: 'photo-costume-selfie',
+    url: costumeStoreSelfie,
+    caption: 'Costume store mirror selfie & fun moments with my best friend',
+    category: 'moments',
+    date: 'September 2026',
+    location: 'Costume Store',
+    likes: 36
+  },
+  {
+    id: 'photo-beach-sunset',
+    url: beachSunsetPhoto,
+    caption: 'Golden hour & vibrant pink skies over the crashing ocean waves',
+    category: 'moments',
+    date: 'September 2026',
+    location: 'Ocean Beach',
+    likes: 42
+  },
+  {
+    id: 'photo-tory-burch-shopping',
+    url: shoppingBagPhoto,
+    caption: 'Sunny shopping day & aesthetic retail haul in the afternoon sun',
+    category: 'moments',
+    date: 'September 2026',
+    location: 'Fashion Promenade',
+    likes: 31
+  },
+  {
+    id: 'photo-arena-concert',
+    url: concertPhoto,
+    caption: "Live arena concert vibes — 'Who Want The Smoke' stage show",
+    category: 'creative',
+    date: 'September 2026',
+    location: 'Arena Stage',
+    likes: 39
+  },
+  {
     id: 'photo-1',
     url: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
     caption: 'Late night coding sessions & frontend layout experiments',
@@ -172,15 +212,6 @@ export const DEFAULT_PHOTOS: PhotoItem[] = [
     date: 'October 2026',
     location: 'Outdoor Walk',
     likes: 24
-  },
-  {
-    id: 'photo-3',
-    url: 'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Weekend music inspiration & favorite acoustic playlists',
-    category: 'moments',
-    date: 'September 2026',
-    location: 'Vinyl Cafe',
-    likes: 15
   },
   {
     id: 'photo-4',

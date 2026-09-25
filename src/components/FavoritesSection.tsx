@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FAVORITES_DATA } from '../data/profileData';
-import { Users, Waves, Smile, ShoppingBag } from 'lucide-react';
+import { Users, Waves, MapPin, ShoppingBag } from 'lucide-react';
 
 export const FavoritesSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('all');
@@ -62,7 +62,7 @@ export const FavoritesSection: React.FC = () => {
                     {item.tag}
                   </span>
                   {item.id === 'fav-shopping' && <ShoppingBag className="w-4 h-4 text-amber-700" />}
-                  {item.id === 'fav-fugglers' && <Smile className="w-4 h-4 text-amber-700" />}
+                  {item.id === 'fav-going-out' && <MapPin className="w-4 h-4 text-amber-700" />}
                   {item.id === 'fav-friends' && <Users className="w-4 h-4 text-amber-700" />}
                   {item.id === 'fav-beach' && <Waves className="w-4 h-4 text-amber-700" />}
                 </div>
